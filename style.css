@@ -1,12 +1,12 @@
 /* Global Styles */
 :root {
-    --bg-color: #000000;
-    --card-bg: #e9b7f8;
-    --text-primary: #ca11ef;
-    --text-secondary: #545657;
-    --accent-color: #66185f;
-    --accent-hover: #f42cea;
-    --gradient-bg: linear-gradient(135deg, #85878d 0%, #5d5f61 100%);
+    --bg-color: #2c2c2c;
+    --card-bg: #d6d6d6;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --accent-color: #5b8db8;
+    --accent-hover: #3a6a96;
+    --gradient-bg: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
 }
 
 * {
@@ -33,8 +33,8 @@ body {
     max-width: 800px;
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.224);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    border: 1px solid #b0b0b0;
     position: relative;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@ body {
     gap: 30px;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #b0b0b0;
 }
 
 .profile-photo-container {
@@ -60,7 +60,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--accent-color);
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 20px rgba(91, 141, 184, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -78,7 +78,7 @@ body {
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .profile-role {
@@ -103,7 +103,7 @@ body {
 }
 
 .description-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.06);
     padding: 20px;
     border-radius: 12px;
     line-height: 1.6;
@@ -115,7 +115,6 @@ body {
 .social-footer {
     display: flex;
     justify-content: flex-start;
-    /* Aligns button to start, consistent with flow */
 }
 
 .instagram-btn {
