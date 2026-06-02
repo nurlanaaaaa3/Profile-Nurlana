@@ -1,4 +1,3 @@
-/* Global Styles */
 :root {
     --bg-color: #2c2c2c;
     --card-bg: #d6d6d6;
@@ -6,7 +5,7 @@
     --text-secondary: #4a4a4a;
     --accent-color: #5b8db8;
     --accent-hover: #3a6a96;
-    --gradient-bg: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    --border-color: #b0b0b0;
 }
 
 * {
@@ -22,36 +21,30 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 40px 20px;
     overflow-x: hidden;
 }
 
-/* Main Container */
+/* Container */
 .container {
     background: var(--card-bg);
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-    border: 1px solid #b0b0b0;
-    position: relative;
-    overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
-/* Header Section: Photo & Name */
+/* Header */
 .profile-header {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #b0b0b0;
-}
-
-.profile-photo-container {
-    flex-shrink: 0;
-    position: relative;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .profile-photo {
@@ -62,6 +55,7 @@ body {
     border: 4px solid var(--accent-color);
     box-shadow: 0 0 20px rgba(91, 141, 184, 0.3);
     transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
 .profile-photo:hover {
@@ -71,74 +65,212 @@ body {
 .profile-name-container {
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 
 .profile-name {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .profile-role {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--accent-color);
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Details Section */
+.profile-school {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    padding-left: 14px;
+    border-left: 4px solid var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title i {
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+/* About */
 .profile-details {
     margin-bottom: 30px;
 }
 
-.class-title {
-    font-size: 1.5rem;
-    color: var(--text-secondary);
-    margin-bottom: 15px;
-    border-left: 4px solid var(--accent-color);
-    padding-left: 15px;
-}
-
 .description-box {
-    background: rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.05);
     padding: 20px;
     border-radius: 12px;
-    line-height: 1.6;
     color: var(--text-secondary);
-    font-size: 1.05rem;
-}
-
-/* Footer Section */
-.social-footer {
+    font-size: 0.98rem;
+    line-height: 1.8;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.instagram-btn {
+.description-box strong {
+    color: var(--text-primary);
+}
+
+/* Skills */
+.skills-section {
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 12px;
+}
+
+.skill-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-card i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.skill-card:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.skill-card:hover i {
+    color: white;
+}
+
+/* Info */
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.info-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.info-card i {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.info-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-label {
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Social */
+.social-footer {
+    padding-top: 5px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.instagram-btn,
+.github-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: white;
+    gap: 8px;
     padding: 12px 24px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.35);
 }
 
 .instagram-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(220, 39, 67, 0.6);
+    box-shadow: 0 8px 20px rgba(220, 39, 67, 0.55);
 }
 
-/* Responsive Design */
+.github-btn {
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.github-btn:hover {
+    transform: translateY(-3px);
+    background: #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
 @media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
     .profile-header {
         flex-direction: column;
         text-align: center;
@@ -150,10 +282,14 @@ body {
     }
 
     .profile-name {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    .social-footer {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-buttons {
         justify-content: center;
     }
 }

@@ -4,37 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <!-- AOS Animation Library -->
+    <title>Profil - Nur Lana Agustin</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <!-- Header Section: Photo & Name -->
+
+        <!-- Header -->
         <header class="profile-header" data-aos="fade-down" data-aos-duration="1000">
             <div class="profile-photo-container">
-                <!-- Placeholder Image - User to replace src -->
-                <img src="foto.jpg" alt="foto" class="profile-photo">
+                <img src="foto.jpg" alt="Foto Nur Lana Agustin" class="profile-photo">
             </div>
             <div class="profile-name-container">
-                <h1 class="profile-name">NUR LANA AGUSTIN</h1>
+                <h1 class="profile-name">Nur Lana Agustin</h1>
                 <span class="profile-role">Rekayasa Perangkat Lunak</span>
+                <span class="profile-school">SMK Negeri 6 Surakarta</span>
             </div>
         </header>
 
-        <!-- Details Section: Class & Description -->
-        <main class="profile-details" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-            <h2 class="class-title">About Me</h2>
-
+        <!-- About Me -->
+        <section class="profile-details" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
             <div class="description-box">
-                <p>
-                    Hallo, perkenalan nama saya Nur Lana Agustin. Saat ini saya
+                Hallo, perkenalan nama saya Nur Lana Agustin. Saat ini saya
                     bersekolah di SMK NEGERI 6 Surakarta, tepatnya di kelas XI Rekayasa Perangkat Lunak (RPL).
                     Saya memiliki minat yanng besar dalam dunia teknologi, terutama dalam bidang pemograman dan pengembangan web.
                 </p>
@@ -43,22 +39,104 @@
                     project sederhana. Saya bercita-cita untuk menjadi seorang yang sukses dan dapat membahagiakan kedua orang tua saya
                 </p>
             </div>
+        </section>
 
-            <!-- Footer Section: Instagram Button -->
-            <div class="social-footer" style="margin-top: 20px;">
+        <!-- Skills -->
+        <section class="skills-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-android"></i>
+                    <span>Android</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-palette"></i>
+                    <span>Canva</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="info-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <h2 class="section-title"><i class="fas fa-info-circle"></i> Info</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-school"></i>
+                    <div>
+                        <span class="info-label">Sekolah</span>
+                        <span class="info-value">SMK Negeri 6 Surakarta</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <span class="info-label">Jurusan</span>
+                        <span class="info-value">Rekayasa Perangkat Lunak</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span class="info-label">Kota</span>
+                        <span class="info-value">Surakarta, Jawa Tengah</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-heart"></i>
+                    <div>
+                        <span class="info-label">Hobi</span>
+                        <span class="info-value"></span>Membaca novel & belajar teknologi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social -->
+        <section class="social-footer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <h2 class="section-title"><i class="fas fa-share-alt"></i> Sosial Media</h2>
+            <div class="social-buttons">
                 <a href="https://www.instagram.com/nurlnaaa_/" target="_blank" class="instagram-btn">
-                    <i class="fab fa-instagram"></i> Follow on Instagram
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://github.com/nurlanaaaaa3" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
-        </main>
-
+        </section>
 
     </div>
 
-    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({ once: true });
     </script>
 </body>
 
